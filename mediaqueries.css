@@ -1,0 +1,150 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+}
+
+.section__pic-container img {
+  max-width: 100%;
+  height: auto;
+  /* Add animation properties */
+  animation-name: profilePicAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; /* Infinite animation */
+}
+
+/* Define the keyframes for the animation */
+@keyframes profilePicAnimation {
+  0% {
+    transform: scale(1); /* Initial size */
+  }
+  50% {
+    transform: scale(1.1); /* Increase size at 50% of the animation duration */
+  }
+  100% {
+    transform: scale(1); /* Return to original size */
+  }
+}
+
+
+ 
+
+
+/* Your existing CSS styles */
+/* Define typing animation */
+@keyframes typingAnimation {
+  0% {
+    width: 0; /* Start with no width */
+  }
+  100% {
+    width: 100%; /* Gradually reveal the entire text */
+  }
+}
+
+/* Apply typing animation only once */
+.title.typing {
+  overflow: hidden; /* Hide overflow to make text appear as if being typed */
+  border-right: 2px solid #000; /* Initial cursor */
+  white-space: nowrap; /* Prevent line breaks */
+  animation: typingAnimation 5s steps(40) forwards; /* Animation duration: 5s */
+}
+
