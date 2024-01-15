@@ -26,7 +26,6 @@ Visit my portfolio: [Aryan Rangapur Portfolio](https://aryanrangapur.github.io/p
 ## Features
 
 - **Responsive Design:** The portfolio is designed to be responsive and accessible on various devices and screen sizes.
-- **Project Showcase:** Display of various projects I've worked on, each with a brief description and a link to the live project or its repository.
 - **About Me Section:** A section providing information about my background, skills, and interests.
 - **Contact Information:** A way for visitors to get in touch with me.
 
