@@ -4,13 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
     <div class="cursor"></div>
+=======
+    <title>Aryan Rangapur</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+>>>>>>> master
     <style>
       body {
         margin: 0;
         padding: 0;
         background-color: #f8f8e7; /* Light skin tone color - change this to your preferred color */
       }
+<<<<<<< HEAD
     </style>
     <title>Aryan Rangapur</title>
     <link rel="stylesheet" href="style.css" />
@@ -27,6 +34,35 @@
         </ul>
       </div>
     </nav>
+=======
+
+      /* Additional styles for the particle container */
+      .particle-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none; /* Allows clicks to pass through */
+        z-index: 10; /* Higher z-index to place it above other elements */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="particle-container"></div>
+
+    <nav id="desktop-nav">
+      <div class="logo">Aryan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+>>>>>>> master
     <nav id="hamburger-nav">
       <div class="logo">Aryan</div>
       <div class="hamburger-menu">
@@ -36,12 +72,20 @@
           <span></span>
         </div>
         <div class="menu-links">
+<<<<<<< HEAD
           <li><a href="#about" onclick="toggleMenu()" >About</a></li>
+=======
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+>>>>>>> master
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
+<<<<<<< HEAD
     <div class="particle-container"></div>
+=======
+>>>>>>> master
 
     <button id="dark-mode-toggle" onmouseover="displayPopup()" onmouseout="hidePopup()">Dark Mode</button>
     <div id="popup" class="popup">Available Soon</div>
@@ -51,10 +95,17 @@
         <div class="sphere-animation"></div>
         <img src="./assets/profile-pic.png" alt="Aryan Rangapur profile picture" />
       </div>
+<<<<<<< HEAD
       
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
   
+=======
+
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+
+>>>>>>> master
         <h1 class="title">Aryan Rangapur</h1>
         <p class="section__text__p2">Computer Science Student</p>
         <div class="btn-container">
@@ -74,11 +125,15 @@
             alt="My Github profile"
             class="icon"
             onclick="window.open('https://github.com/aryanrangapur', '_blank')"
+<<<<<<< HEAD
             
+=======
+>>>>>>> master
           />
         </div>
       </div>
     </section>
+<<<<<<< HEAD
    
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
@@ -96,11 +151,79 @@
 
     
     
+=======
+
+    <div id="projects">
+      <p class="section__text__p1">Some of My Work</p>
+      <h1 class="title" style="font-size: 36px;">My Projects</h1>
+      <div class="projects-container">
+        <a href="https://arxiv.org/abs/2405.18344" target="_blank" class="project-link">
+          <div class="project-card">
+            <h3>Battle of LLMs</h3>
+            <p>Conducted comprehensive research comparing and evaluating state-of-the-art language models, including
+              ChatGPT, GPT-4, Gemini, Mixtral, and Claude, across various conversational question-answering corpora,
+              pinpointing instances of inaccuracies and potential areas for improvement.
+            </p>
+          </div>
+        </a>
+
+        <a href="https://github.com/aryanrangapur/Bulldozers-price-prediction" target="_blank" class="project-link">
+          <div class="project-card">
+            <h3>Bulldozer Price Estimation</h3>
+            <p>Developed a predictive model for estimating bulldozer prices using regression techniques, achieving an R²
+              score of 95%. Utilized Scikit-learn, along with NumPy, Pandas, and Matplotlib, for data processing and
+              visualization.
+            </p>
+          </div>
+        </a>
+
+        <a href="https://github.com/aryanrangapur/Food-Classification-Project" target="_blank" class="project-link">
+          <div class="project-card">
+            <h3>Efficient Food Image Classification</h3>
+            <p>Created a Convolutional Neural Network (CNN) model for binary and multiclass food image classification across
+              10 different categories, achieving an accuracy of 96%.
+            </p>
+          </div>
+        </a>
+
+        <a href="https://github.com/aryanrangapur/heart-disease-project" target="_blank" class="project-link">
+          <div class="project-card">
+            <h3>Heart Disease Prediction Model</h3>
+            <p>Developed a machine learning model for heart disease classification, achieving 94% accuracy in predicting the
+              likelihood of heart disease based on various patient data features.
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+
+      <div class="details-container">
+        <div class="text-container">
+          <h3>Education</h3>
+          <p>B.Tech. in Computer Science, Vellore Institute of Technology</p>
+        </div>
+        <div class="text-container">
+          <h3>Skills</h3>
+          <p>Deep Learning, Web Development, and Cyber Security</p>
+        </div>
+        <div class="text-container">
+          <h3>Experience</h3>
+          <p>Research Assistant, AI & Robotics Center (Jan 2023 - Present)</p>
+        </div>
+      </div>
+    </section>
+
+>>>>>>> master
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
+<<<<<<< HEAD
           <img
             src="./assets/email.png"
             alt="Email icon"
@@ -115,6 +238,13 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
+=======
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:aryan.rangapur717@gmail.com">Email</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+>>>>>>> master
           <p><a href="https://www.linkedin.com/in/aryan-rangapur-83834b253/">LinkedIn</a></p>
         </div>
       </div>
