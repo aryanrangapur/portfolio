@@ -362,11 +362,7 @@ article .icon {
 }
 
 .project-title {
-<<<<<<< HEAD
-  margin: 1rem;
-=======
   margin: 1 rem;
->>>>>>> master
   color: black;
 }
 
@@ -597,9 +593,6 @@ body {
 .details-container{
   background-color: #f8f8e7;
 }
-<<<<<<< HEAD
-  
-=======
   
 
 /* projects*/
@@ -809,7 +802,7 @@ body {
   cursor: url('assets/cursor-click.png'), auto; /* Use a custom cursor image */
   .cursor {
     position: fixed;
-    z-index: 11; 
+    z-index: 99999; 
     width: 12px; 
     height: 12px;
     background-color: #1d1b1bcf; 
@@ -818,5 +811,28 @@ body {
     transform: translate(0%, 0%); 
   }
 }
+__pic-container {
+    position: relative;
+    z-index: 0; 
+  }
 
->>>>>>> master
+
+.cursor {
+  position: fixed;
+  z-index: 99999; 
+  width: 12px; 
+  height: 12px;
+  background-color: #1d1b1bcf; 
+  border-radius: 50%; 
+  pointer-events: none; 
+  transform: translate(0%, 0%); 
+}
+
+.menu-links {
+  background-color: #f8f8e7; 
+}
+
+.details-container{
+  background-color: #f8f8e7;
+}
+  
