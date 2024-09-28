@@ -2,14 +2,6 @@
 
 Welcome to my personal portfolio repository! This is where I showcase my skills, projects, and experiences as a web developer. Feel free to explore and get to know more about me.
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Technologies Used](#technologies-used)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
 
 ## Introduction
 
