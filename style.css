@@ -495,7 +495,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  cursor: none; /* Hide the default cursor */
+  cursor: none; 
 }
 
 .particle-container {
@@ -518,23 +518,21 @@ body {
   pointer-events: none;
 }
 body {
-  cursor: none; /* Hide the default cursor */
+  cursor: none; 
 }
 
 
-/* CSS for the particle movement animation */
 @keyframes moveParticles {
   from {
     transform: translateY(-10vh);
-    opacity: 0; /* Optionally, start with 0 opacity */
+    opacity: 0; 
   }
   to {
     transform: translateY(110vh);
-    opacity: 1; /* Optionally, reach full opacity */
+    opacity: 1; 
   }
 }
 
-/* Style for the individual particle */
 .particle {
   width: 5px; 
   height: 5px; 
@@ -602,17 +600,15 @@ body {
   background-color: #f8f8e7;
 }
 
-/* Ensure cards are arranged in a 2x2 grid */
-/* Ensure cards are arranged in a 2x2 grid */
 .projects-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  gap: 2rem; /* Adjust the gap between cards */
+  gap: 2rem; 
   padding: 2rem 5%;
 }
 
 .project-link {
-  text-decoration: none; /* Remove underline on links */
+  text-decoration: none;
   display: block;
 }
 
@@ -636,27 +632,23 @@ body {
   color: #666666;
 }
 
-/* Remove underlines and default link styles */
 .project-link, .project-link h3, .project-link p {
-  text-decoration: none !important; /* Force removal of underlines */
+  text-decoration: none !important; 
 }
 
-/* Hover effect for the project cards */
 .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Media query for smaller screens (for 1 column layout) */
 @media (max-width: 768px) {
   .projects-container {
-    grid-template-columns: 1fr; /* Stack cards vertically */
+    grid-template-columns: 1fr; 
   }
 }
 
 
 
-/* General body styling */
 body {
   margin: 0;
   padding: 0;
@@ -665,7 +657,6 @@ body {
   color: #333;
 }
 
-/* About Me Section Styling */
 #about {
   background-color: #f8f8e7;
   padding: 50px 20px;
@@ -768,23 +759,23 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f8f8e7;
-  position: relative; /* Ensure body is positioned for absolute children */
+  position: relative; 
 }
 
 .particle-container {
-  position: absolute; /* Absolute positioning to be in the background */
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1; /* Lower z-index to ensure it's behind other content */
+  z-index: 1; 
 }
 
 section,
 #projects {
-  position: relative; /* Allow for stacking context */
-  z-index: 2; /* Higher z-index to ensure visibility above the particle container */
-  padding: 20px; /* Adjust padding for spacing */
+  position: relative; 
+  z-index: 2;
+  padding: 20px;
 }
 
 
@@ -794,12 +785,12 @@ section,
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* Keep this to allow interaction with underlying elements */
-  z-index: 10; /* Higher z-index to place it above other elements */
+  pointer-events: none; 
+  z-index: 10; 
 }
 
 body {
-  cursor: url('assets/cursor-click.png'), auto; /* Use a custom cursor image */
+  cursor: url('assets/cursor-click.png'), auto; 
   .cursor {
     position: fixed;
     z-index: 99999; 
