@@ -112,16 +112,15 @@
   animation-iteration-count: infinite; /* Infinite animation */
 }
 
-/* Define the keyframes for the animation */
 @keyframes profilePicAnimation {
   0% {
-    transform: scale(1); /* Initial size */
+    transform: scale(1); 
   }
   50% {
-    transform: scale(1.1); /* Increase size at 50% of the animation duration */
+    transform: scale(1.1); 
   }
   100% {
-    transform: scale(1); /* Return to original size */
+    transform: scale(1); 
   }
 }
 
@@ -129,22 +128,20 @@
  
 
 
-/* Your existing CSS styles */
-/* Define typing animation */
+
 @keyframes typingAnimation {
   0% {
-    width: 0; /* Start with no width */
+    width: 0; 
   }
   100% {
-    width: 100%; /* Gradually reveal the entire text */
+    width: 100%; 
   }
 }
 
-/* Apply typing animation only once */
 .title.typing {
-  overflow: hidden; /* Hide overflow to make text appear as if being typed */
-  border-right: 2px solid #000; /* Initial cursor */
-  white-space: nowrap; /* Prevent line breaks */
-  animation: typingAnimation 5s steps(40) forwards; /* Animation duration: 5s */
+  overflow: hidden; 
+  border-right: 2px solid #000; 
+  white-space: nowrap; 
+  animation: typingAnimation 5s steps(40) forwards; 
 }
 
