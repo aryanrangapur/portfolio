@@ -33,46 +33,40 @@ function createParticles() {
     const particle = document.createElement('div');
     particle.classList.add('particle');
     particle.style.left = `${getRandomNumber(0, window.innerWidth)}px`;
-    particle.style.top = `${getRandomNumber(-500, -50)}px`; // Start position above the window
+    particle.style.top = `${getRandomNumber(-500, -50)}px`; 
     particleContainer.appendChild(particle);
 
-    // Start animation for each particle with a delay
     animateParticle(particle);
   }
 }
 
-// Function to animate individual particles
 function animateParticle(particle) {
-  const duration = Math.random() * 5 + 2; // Adjust animation duration
-  particle.style.animationDuration = `${duration}s`; // Set animation duration dynamically
-  particle.style.animationDelay = `${Math.random() * 5}s`; // Randomize animation delay
+  const duration = Math.random() * 5 + 2; 
+  particle.style.animationDuration = `${duration}s`; 
+  particle.style.animationDelay = `${Math.random() * 5}s`; 
 }
 
-// Function to generate random number between min and max
 function getRandomNumber(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-// Initialize particles creation and animation
 window.addEventListener('load', () => {
-  createParticles(); // Create particles
-  const animationDuration = 8000; // Duration in milliseconds (8 seconds)
+  createParticles(); 
+  const animationDuration = 8000; 
   const particles = document.querySelectorAll('.particle');
-  const delayBetweenRemovals = animationDuration / particles.length; // Calculate delay for each particle's removal
+  const delayBetweenRemovals = animationDuration / particles.length; 
 
-  // Function to remove particles with a delay
   function removeParticleWithDelay(index) {
     if (index < particles.length) {
       setTimeout(() => {
-        particles[index].remove(); // Remove particle at the specified index
-        removeParticleWithDelay(index + 1); // Remove next particle with a delay
+        particles[index].remove(); 
+        removeParticleWithDelay(index + 1); 
       }, delayBetweenRemovals);
     }
   }
 
-  // Start removing particles after the specified duration
   setTimeout(() => {
-    removeParticleWithDelay(0); // Start removing particles
+    removeParticleWithDelay(0); 
   }, animationDuration);
 });
 
@@ -80,13 +74,13 @@ window.addEventListener('load', () => {
 const cursor = document.querySelector('.cursor');
 
 function moveCursor(event) {
-  const cursorSize = 12; // Adjust the cursor size if needed
+  const cursorSize = 12; 
   cursor.style.left = `${event.clientX - cursorSize / 2}px`;
   cursor.style.top = `${event.clientY - cursorSize / 2}px`;
 }
 
 function updateCursorOnScroll() {
-  const cursorSize = 12; // Adjust the cursor size if needed
+  const cursorSize = 12; 
   cursor.style.top = `${window.scrollY + event.clientY - cursorSize / 2}px`;
 }
 
@@ -96,18 +90,15 @@ window.addEventListener('scroll', updateCursorOnScroll);
 
 // Function to handle gyroscope change
 function handleGyroscope(event) {
-  const beta = event.beta; // Get the beta rotation value from gyroscope
+  const beta = event.beta; 
 
-  // Apply the gyroscope data to the particle movement
   const particles = document.querySelectorAll('.particle');
   particles.forEach(particle => {
-    particle.style.transform = `translateY(${beta}deg)`; // Modify the translation based on gyroscope data
+    particle.style.transform = `translateY(${beta}deg)`; 
   });
 }
 
-// Check for gyroscope support
 if (window.DeviceOrientationEvent) {
-  // If the device supports gyroscope
   window.addEventListener('deviceorientation', handleGyroscope);
 } else {
   console.log('Device does not support gyroscope.');
@@ -115,7 +106,6 @@ if (window.DeviceOrientationEvent) {
 
 
 
-// Function to check if the device is a mobile device
 function isMobileDevice() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
