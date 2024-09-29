@@ -25,9 +25,8 @@ function hidePopup() {
   document.getElementById('popup').style.display = 'none';
 }
 
-/// Function to create particles and initiate animation
 function createParticles() {
-  const numParticles = 24; // Number of particles
+  const numParticles = 22; 
   const particleContainer = document.querySelector('.particle-container');
 
   for (let i = 0; i < numParticles; i++) {
