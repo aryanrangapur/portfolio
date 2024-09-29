@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   title.addEventListener('animationend', function() {
     title.style.borderRight = 'none'; 
-    title.classList.remove('typing'); // Remove the typing animation class
+    title.classList.remove('typing'); 
   });
 });
 
